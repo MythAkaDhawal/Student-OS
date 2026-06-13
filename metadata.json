@@ -1,0 +1,6 @@
+{
+  "name": "Student OS",
+  "description": "A centralized student academic and career command center to manage notices, deadlines, placements, attendance, tasks, and documents with AI-powered information extraction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
