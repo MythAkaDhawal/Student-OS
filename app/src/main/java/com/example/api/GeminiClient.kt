@@ -197,7 +197,7 @@ object GeminiExtractor {
         val responseText = response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text
             ?: throw Exception("No extraction text returned from Gemini")
 
-        // Parse extracted structured JSON using Moshi
+        // Parse extracted structured JSON via Moshi
         val adapter = RetrofitClient.jsonParserMoshi.adapter(ExtractionResult::class.java)
         return adapter.fromJson(responseText) ?: throw Exception("Failed to deserialize structured extraction JSON")
     }
